@@ -5,7 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - UKU</title>
   <link rel="stylesheet" href="style.css">
+<meta name="description" content="UKUPHILA is a community-driven organisation dedicated to helping others and putting smiles on their faces.">
+<meta name="keywords" content="UKU, UKUPHILA, charity, community help, donation, support, South Africa">
+<meta name="author" content="UKUPHILA Organisation">
+
+<!-- Social Media Preview -->
+<meta property="og:title" content="UKUPHILA – Helping Communities">
+<meta property="og:description" content="A movement focused on helping others and making a difference.">
+<meta property="og:type" content="website">
+
+<!-- Mobile SEO -->
+<meta name="theme-color" content="#111">
+<meta name="description" content="Support our work by making a donation. Your contribution helps maintain and improve our website.">
+<meta name="keywords" content="donation, support, contribute, website donation">
+<meta name="author" content="Your Name">
+
+
 </head>
+<script src="script.js"></script>
+
 <body>
   <header>
     <h1>UKU Website</h1>
@@ -17,21 +35,25 @@
     </nav>
   </header>
 
-  <section>
-    <h2>Contact Us</h2>
-    <form class="contact-form">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+<section class="contact-section">
+  <h2>Contact Us</h2>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+  <form id="contactForm">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" placeholder="Enter your full name">
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
+    <label for="email">Email Address</label>
+    <input type="email" id="email" placeholder="Enter a valid email">
 
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+    <label for="message">Your Message</label>
+    <textarea id="message" rows="5" placeholder="Type your message here"></textarea>
+
+    <button type="submit">Send Message</button>
+
+    <p id="formStatus" class="status"></p>
+  </form>
+</section>
+
 
   <footer>
     <p>&copy; 2025 UKU Website</p>
